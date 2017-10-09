@@ -1,6 +1,6 @@
 ---
 title: "幸福终点站"
-date: 2009-11-21 23:42
+date: 2009-11-21 23:42:00
 tags: ["movie"]
 categories: ["personal"]
 slug: "the-terminal-review"

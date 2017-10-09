@@ -1,29 +1,10 @@
-Lego 30222 Review
-=================
-
-date
-
-:   2013-11-03
-
-slug
-
-:   Lego-30222-Review
-
-tags
-
-:   lego, city
-
-category
-
-:   lego
-
-author
-
-:   Dormouse Young
-
-summary
-
-:   Review of Plice Helicopter (lego 30222)
+---
+title: "Lego 30222 Review"
+date: 2013-11-03
+categories: ["lego"]
+slug: "Lego-30222-Review"
+description: "Review of Plice Helicopter (lego 30222)"
+---
 
 所属系列：City （城市）
 

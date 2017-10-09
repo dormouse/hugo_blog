@@ -1,6 +1,6 @@
 ---
 title: "家里来了一个“机器人”"
-date: 2010-02-27 18:32
+date: 2010-02-27 18:32:00
 categories: ["personal"]
 slug: "roomba550-review"
 ---

@@ -7,4 +7,4 @@ slug: "the-most-intimate-goods-in-newegg"
 
 
 
-![newegg.jpg](images/newegg.jpg)
+![newegg.jpg](/images/newegg.jpg)

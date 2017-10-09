@@ -7,7 +7,7 @@ languageCode = "en-us"
 # disqusShortname = "XYW"
 
 [params]
-  # description = "This is a personal blog of Dormouse Young"
+  description = "You will forget it"
   dateformat = "Jan 2, 2006" # Optional
   # Fonts settings.
   # googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.

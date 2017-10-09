@@ -1,33 +1,12 @@
-《你一生的故事》读后感
-======================
-
-date
-
-:   2017-02-18 21:54:46
-
-modified
-
-:   2017-02-20 10:21:00
-
-slug
-
-:   ni-yi-sheng-de-gu-shi-du-hou-gan
-
-tags
-
-:   reading
-
-category
-
-:   personal
-
-author
-
-:   Dormouse Young
-
-summary
-
-:   很久没有遇到想一口气读完的作品了，《你一生的故事》我一口气读完了。
+---
+title: "《你一生的故事》读后感"
+date: 2017-02-18 21:54:46
+lastmod: 2017-02-20 10:21:00
+tags: ["reading"]
+categories: ["personal"]
+slug: "ni-yi-sheng-de-gu-shi-du-hou-gan"
+description: "很久没有遇到想一口气读完的作品了，《你一生的故事》我一口气读完了。"
+---
 
 欲罢不能
 --------

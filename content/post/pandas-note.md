@@ -2120,7 +2120,7 @@ ts = ts.cumsum()
 ts.plot()
 ```
 
-![pandas\_67\_1.png](images/pandas_67_1.png)
+![pandas\_67\_1.png](/images/pandas_67_1.png)
 
 ``` {.sourceCode .python}
 df = df_movies.copy()
@@ -2201,7 +2201,7 @@ df.head()
 df.plot(x='Date', y=['Top 10 Gross', 'Gross'])
 ```
 
-![pandas\_69\_1.png](images/pandas_69_1.png)
+![pandas\_69\_1.png](/images/pandas_69_1.png)
 
 使用另一个 DataFrame 来更新数据
 -------------------------------

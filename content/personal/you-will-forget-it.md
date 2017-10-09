@@ -11,7 +11,8 @@ slug: "you-will-forget-it"
 的服务很帖心，只要记得注册的电子邮件就可以了。
 
 Opera 的 Blog
-标题可以写一个副标题，我原来想写“好记性不如烂笔头”。转念一想，要是写一句洋文多么时髦啊，可是我英文六级没过，只有靠搜索了，以下是我的搜索结果：
+标题可以写一个副标题，我原来想写“好记性不如烂笔头”。转念一想，要是写一句洋文
+多么时髦啊，可是我英文六级没过，只有靠搜索了，以下是我的搜索结果：
 
 bing:Better memory than rotten written
 
@@ -23,6 +24,5 @@ yahoo:The retentiveness is inferior to the rotten writing skill
 
 youdao:You will forget it
 
-youdao
-的翻译我觉得是最搞笑的，但是Cat的解释是这是一个意译，我觉得有点道理。所以我选择这个作为我的
-Blog 的副标题，相当的有深意啊。
+youdao 的翻译我觉得是最搞笑的，但是 Cat 的解释是这是一个意译，我觉得有点道理。
+所以我选择这个作为我的 Blog 的副标题，相当的有深意啊。

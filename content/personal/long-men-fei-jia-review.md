@@ -6,8 +6,6 @@ categories: ["personal"]
 slug: "long-men-fei-jia-review"
 ---
 
-
-
 今天看了龙门飞甲3D版，不出意外地失望。版本写得烂，这年头编个好故事这么难么？
 
 远景都是动画，一开头我还以为今天要看一部动画片。

@@ -1,25 +1,10 @@
-《战略特勤组》观后感
-====================
-
-date
-
-:   2010-06-07 21:02
-
-slug
-
-:   unthinkable-review
-
-tags
-
-:   movie
-
-category
-
-:   personal
-
-author
-
-:   Dormouse Young
+---
+title: "《战略特勤组》观后感"
+date: 2010-06-07 21:02:00
+tags: ["movie"]
+categories: ["personal"]
+slug: "unthinkable-review"
+---
 
 －－特以此文纪念忘却的高考
 

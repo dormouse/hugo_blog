@@ -1,29 +1,10 @@
-Lego 30106 Review
-=================
-
-date
-
-:   2013-10-30
-
-slug
-
-:   Lego-30106-Review
-
-tags
-
-:   lego, Friends
-
-category
-
-:   lego
-
-author
-
-:   Dormouse Young
-
-summary
-
-:   Review of Ice Cream Stand (lego 30106)
+---
+title: "Lego 30106 Review"
+date: 2013-10-30
+categories: ["lego"]
+slug: "Lego-30106-Review"
+description: "Review of Ice Cream Stand (lego 30106)"
+---
 
 所属系列：Friends （女孩）
 

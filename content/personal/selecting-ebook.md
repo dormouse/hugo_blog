@@ -1,6 +1,6 @@
 ---
 title: "电子书比较中..."
-date: 2010-09-17 15:57
+date: 2010-09-17 15:57:00
 categories: ["personal"]
 slug: "selecting-ebook"
 ---
@@ -9,7 +9,7 @@ slug: "selecting-ebook"
 
 想买一本电子书，比较中...
 
-![ebook](images/ebook.jpg)
+![ebook](/images/ebook.jpg)
 
 还有一些备选的型号:台电K3，纽曼6206。
 
