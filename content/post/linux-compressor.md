@@ -1,7 +1,7 @@
 ---
 title: "Linux 下压缩和解压缩"
 date: 2014-10-20 14:42:05
-categories: ["linux"]
+categories: ["software"]
 slug: "linux-compressor"
 ---
 
@@ -12,24 +12,23 @@ Linux下压缩文件种类繁多，这里简单介绍一下常用的命令。
 常用压缩命令
 ------------
 
-  扩展名             解压                                          打包
-  ------------------ --------------------------------------------- -----------------------------------------------------------------
-  .tar               tar xvf FileName.tar                          tar cvf FileName.tar DirName
-  .tar.gz            tar zxvf FileName.tar.gz                      tar zcvf FileName.tar.gz DirName
-  .tar.bz2           tar jxvf FileName.tar.bz2                     tar tar jcvf FileName.tar.bz2 DirName
-  .gz                gunzip FileName.gz gzip -d FileName.gz        gzip FileName
-  .bz2               bzip2 -d FileName.bz2 bunzip2 FileName.bz2    bzip2 -z FileName
-  .bz                bzip2 -d FileName.bz bunzip2 FileName.bz      
-  .tar.bz            tar jxvf FileName.tar.bz                      
-  .Z                 uncompress FileName.Z                         compress FileName
-  .tar.Z             tar Zxvf FileName.tar.Z                       tar Zcvf FileName.tar.Z DirName
-  .tgz               tar zxvf FileName.tgz                         
-  .tar.tgz           tar zxvf FileName.tar.tgz                     tar zcvf FileName.tar.tgz FileName
-  .zip               unzip FileName.zip                            zip FileName.zip DirName
-  .rar               rar a FileName.rar                            rar e FileName.rar
-  .lha               lha -e FileName.lha                           lha -a FileName.lha FileName
+  扩展名             |解压                                          |打包
+  ------------------ |--------------------------------------------- |-----------------------------------------------------------------
+  .tar               |tar xvf FileName.tar                          |tar cvf FileName.tar DirName
+  .tar.gz            |tar zxvf FileName.tar.gz                      |tar zcvf FileName.tar.gz DirName
+  .tar.bz2           |tar jxvf FileName.tar.bz2                     |tar tar jcvf FileName.tar.bz2 DirName
+  .gz                |gunzip FileName.gz gzip -d FileName.gz        |gzip FileName
+  .bz2               |bzip2 -d FileName.bz2 bunzip2 FileName.bz2    |bzip2 -z FileName
+  .bz                |bzip2 -d FileName.bz bunzip2 FileName.bz      |
+  .tar.bz            |tar jxvf FileName.tar.bz                      |
+  .Z                 |uncompress FileName.Z                         |compress FileName
+  .tar.Z             |tar Zxvf FileName.tar.Z                       |tar Zcvf FileName.tar.Z DirName
+  .tgz               |tar zxvf FileName.tgz                         |
+  .tar.tgz           |tar zxvf FileName.tar.tgz                     |tar zcvf FileName.tar.tgz FileName
+  .zip               |unzip FileName.zip                            |zip FileName.zip DirName
+  .rar               |rar a FileName.rar                            |rar e FileName.rar
+  .lha               |lha -e FileName.lha                           |lha -a FileName.lha FileName
 
-------------------------------------------------------------------------
 
 .tar .tgz .tar.gz .tar.Z .tar.bz .tar.bz2 .zip
 

@@ -1,25 +1,10 @@
-Sphinx cheat sheet
-==================
-
-date
-
-:   2013-09-10
-
-slug
-
-:   sphinx-cheet-sheet
-
-tags
-
-:   sphinx
-
-category
-
-:   software
-
-author
-
-:   Dormouse Young
+---
+title: "Sphinx cheat sheet"
+date: 2013-09-10
+tags: ["sphinx"]
+categories: ["software"]
+slug: "sphinx-cheet-sheet"
+---
 
 Here is a quick and dirty cheat sheet for some common stuff you want to
 do in sphinx and ReST.
@@ -27,11 +12,11 @@ do in sphinx and ReST.
 文本格式化
 ----------
 
-  名称 代码   示例                    
-  ----------- ----------------------- --------------
-  斜体 \`\`   *斜体*\`\` *斜体*       
-  粗休 \`\`   **粗体**\`\` \*\*粗体   \*\*
-  原文 \`     \`\**原文\`\` \`\`*\*   原文\*\*\`\`
+  名称 |代码      |示例
+  -----|------    |-----------------------
+  斜体 |`*斜体* ` |*斜体*
+  粗休 |`**粗体**`|**粗体**
+  原文 |\`原文\`  |`原文`
 
 源代码
 ------
@@ -45,10 +30,10 @@ do in sphinx and ReST.
 
 以上代码显示效果如下：
 
-You can represent code blocks fairly easily:
+    You can represent code blocks fairly easily:
 
-    import numpy as np
-    x = np.random.rand(12)
+        import numpy as np
+        x = np.random.rand(12)
 
 也可以直接从文件引入代码。例如从exts/chinese\_search.py
 引入代码可以使用如下命令:

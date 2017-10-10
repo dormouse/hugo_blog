@@ -1,33 +1,11 @@
-结合 Sphinx 与 xeTex 生成PDF
-============================
-
-date
-
-:   2013-01-27 21:42:37
-
-modified
-
-:   2015-03-10 13:55:57
-
-tags
-
-:   sphinx, xetex, pdf
-
-category
-
-:   software
-
-slug
-
-:   make-pdf-with-Sphinx-and-xeTex
-
-author
-
-:   Dormouse Young
-
-summary
-
-:   make pdf with Sphinx and xeTex
+---
+title: "结合 Sphinx 与 xeTex 生成PDF"
+date: 2013-01-27 21:42:37
+lastmod: 2015-03-10 13:55:57
+tags: ["sphinx","xetex", "pdf"]
+categories: ["software"]
+slug: "make-pdf-with-Sphinx-and-xeTex"
+---
 
 安装xeTex
 ---------

@@ -6,6 +6,7 @@ tags: ["python","note"]
 categories: ["Development"]
 slug: "python-note-900-other"
 description: "Python note series 900 - other"
+toc: True
 ---
 
 
@@ -328,12 +329,7 @@ python 内置模块可以创建 Web 服务:
 动态生成类
 ----------
 
-<div class="admonition important">
-
-This section is copy from
-<http://www.python8.org/a/fenleiwenzhang/yuyanjichu/2010/1001/566.html>
-
-</div>
+This section is copy from http://www.python8.org/a/fenleiwenzhang/yuyanjichu/2010/1001/566.html
 
 方法一:
 

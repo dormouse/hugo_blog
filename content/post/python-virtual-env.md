@@ -9,48 +9,61 @@ slug: "python-virtual-env"
 
 
 
-Install Anaconda
-----------------
+## Anaconda
+
+### Install
 
 官方网站：https://www.continuum.io/
+
 清华大学开源软件镜像站：https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
 
 conda 官方文档：https://docs.anaconda.com/
 
-查看版本:
+### Anaconda 镜像使用帮助
 
-    conda -V
-    conda --version
+Anaconda 是一个用于科学计算的 Python 发行版，支持 Linux, Mac, Windows, 包含了众多流行的科学计算、数据分析的 Python 包。
 
-查看信息:
+Anaconda 安装包可以到 https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/ 下载。
 
-    conda info
+TUNA 还提供了 Anaconda 仓库的镜像，运行以下命令:
+
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    conda config --set show_channel_urls yes
+
+即可添加 Anaconda Python 免费仓库。
+
+运行 `conda install numpy` 测试一下吧。
+
+#### 常用命令
+
+查看版本: `conda -V` 或者 `conda --version`
+
+查看信息: `conda info`
+
+查看当前环境的包列表: `conda list`
+
+搜索包: `conda search beautifulsoup4`
 
 ### 虚拟环境
 
-查看有哪些虚拟环境:
-
-    conda env list
-
-查看当前所在的虚拟环境:
-
-    conda info --e
-
 创建虚拟环境:
 
-    conda /home/somebody/anaconda3/bin/conda create -p /home/somebody/anaconda3/envs/env_name -y python=3.6
+    conda create -n env_name package_name python=3*
 
-切换虚拟环境:
+    例如：
 
-    source activate env_name
+    conda create -n blog sphinx python=3*
 
-查看当前环境的包列表:
+查看有哪些虚拟环境: `conda env list`
 
-    conda list
+查看当前所在的虚拟环境: `conda info --e`
 
-搜索包:
+激活或切换虚拟环境： `source activate env_name`
 
-    conda search beautifulsoup4
+关闭虚拟环境： `source deactivate`
+
+移除虚拟环境： `conda remove -n env_name --all`
+
 
 使用 virtualenvwrapper
 ----------------------

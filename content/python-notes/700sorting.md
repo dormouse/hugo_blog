@@ -1,33 +1,11 @@
-Python Note 700 - Sorting
-=========================
-
-date
-
-:   2017-02-13
-
-modified
-
-:   2017-02-13
-
-slug
-
-:   python-note-700-sorting
-
-tags
-
-:   python, note, sorting
-
-category
-
-:   Development
-
-author
-
-:   Dormouse Young
-
-summary
-
-:   Python note series 700 - sorting
+---
+title: "Python Note 700 - Sorting"
+date: 2017-02-13
+lastmod: 2017-02-13
+tags: ["python","note"]
+categories: ["Development"]
+slug: "python-note-700-sorting"
+---
 
 本文基于 Python 2.7.6 \[GCC 4.8.2\] on linux2 。
 
