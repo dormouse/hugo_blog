@@ -5,11 +5,7 @@ lastmod: 2017-01-18 21:12:42
 tags: ["hugo"]
 categories: ["software"]
 slug: "hugo-quick-start"
-description: "Hugo is a static site generator. This post will build a blog with"
 ---
-
-
-    Hugo quickly.
 
 What is Hugo?
 -------------
@@ -33,7 +29,7 @@ Quick start
 OR
 
 Download the appropriate version for your platform from \[Hugo
-Releases\]( <https://github.com/gohugoio/hugo/releases>)
+Releases]( <https://github.com/gohugoio/hugo/releases>)
 
 Put it in `/usr/local/bin`
 

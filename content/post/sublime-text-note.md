@@ -5,12 +5,8 @@ lastmod: 2017-09-25
 tags: ["sublime","note"]
 categories: ["software"]
 slug: "sublime-text-note"
-description: "Note for sublime text. Sublime Text is a sophisticated text editor"
+toc: True
 ---
-
-
-    for code, markup and prose. You'll love the slick user interface,
-    extraordinary features and amazing performance.
 
 Install Sublime Text3
 ---------------------
@@ -86,6 +82,12 @@ To start using it install it from Package Control and type "Evernote" on
 the Command Palette (`ctrl+shift+p`). See [First
 Use](https://github.com/bordaigorl/sublime-evernote#first-use) for
 linking the plugin to your account.
+
+Tip
+---
+建立软连接，方便终端使用：
+
+    sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
 My Settings
 -----------
