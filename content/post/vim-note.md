@@ -1,33 +1,11 @@
-Vim Note
-========
-
-date
-
-:   2017-02-10
-
-modified
-
-:   2017-02-16
-
-slug
-
-:   vim-note
-
-tags
-
-:   vim, note
-
-category
-
-:   software
-
-author
-
-:   Dormouse Young
-
-summary
-
-:   Note for vim.
+---
+title: "Vim Note"
+date: 2017-02-10
+lastmod: 2017-02-16
+tags: ["vim", "note"]
+categories: ["software"]
+slug: "vim-note"
+---
 
 Use MacVim in Command line
 --------------------------
@@ -51,19 +29,19 @@ Edit more than one file
 
 #### in vim
 
--   
+-
 
     e file
 
     :   open new file
 
--   
+-
 
     sp file
 
     :   open new file in hroizontal window
 
--   
+-
 
     vsp file
 
@@ -102,12 +80,9 @@ date
 What is the &lt;Leader&gt; key?
 -------------------------------
 
-<div class="admonition important">
-
 This section copy from:
-<http://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file>
+http://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
 
-</div>
 
 The `<Leader>` key is mapped to `\` by default. So if you have a map of
 `<Leader>t`, you can execute it by default with `\+t`. For more detail

@@ -4,11 +4,8 @@ date: 2017-02-01
 tags: ["tinkerer","blog"]
 categories: ["software"]
 slug: "tinkerer-quick-start"
-description: "Tinkerer is a Python blogging engine/static website generator"
 ---
 
-
-    powered by Sphinx.
 
 Install
 -------

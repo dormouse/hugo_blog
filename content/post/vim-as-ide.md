@@ -1,33 +1,11 @@
-Vim As IDE
-==========
-
-date
-
-:   2017-02-08 18:57:00
-
-modified
-
-:   2017-02-08 18:57:00
-
-slug
-
-:   vim-as-ide
-
-tags
-
-:   vim, ide
-
-category
-
-:   software
-
-author
-
-:   Dormouse Young
-
-summary
-
-:   Vim is great for program code
+---
+title: "Vim As IDE"
+date: 2017-02-08 18:57:00
+lastmod: 2017-02-08 18:57:00
+tags: ["vim"]
+categories: ["software"]
+slug: "vim-as-ide"
+---
 
 Install Vundle
 --------------

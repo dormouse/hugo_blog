@@ -1,40 +1,18 @@
-Sqlite Note
-===========
-
-date
-
-:   2015-04-24 18:55:57
-
-slug
-
-:   sqlite-note
-
-tags
-
-:   sqlite, note
-
-category
-
-:   software
-
-author
-
-:   Dormouse Young
-
-summary
-
-:   notes of sqlite
+---
+title: "Sqlite Note"
+date: 2015-04-24 18:55:57
+tags: ["sqlite","note"]
+categories: ["software"]
+---
 
 常用查询函数
 ------------
 
-``` {.sourceCode .python}
-def query_db(self, sql, args=(), one=False):
-    cur = self.cx.execute(sql, args)
-    rv = [dict((cur.description[idx][0], value)
-               for idx, value in enumerate(row)) for row in cur.fetchall()]
-    return (rv[0] if rv else None) if one else rv
-```
+    def query_db(self, sql, args=(), one=False):
+        cur = self.cx.execute(sql, args)
+        rv = [dict((cur.description[idx][0], value)
+            for idx, value in enumerate(row)) for row in cur.fetchall()]
+        return (rv[0] if rv else None) if one else rv
 
 清空表的内容，并重置自增字段
 ----------------------------
@@ -45,7 +23,7 @@ def query_db(self, sql, args=(), one=False):
 如何将两个字段字符串合并
 ------------------------
 
-使用 || 符号。
+使用 `||` 符号。
 
 内置函数
 --------
@@ -257,9 +235,9 @@ blob is returned.
 Hint: applications can generate globally unique identifiers using this
 function together with hex() and/or lower() like this:
 
-> hex(randomblob(16))
->
-> lower(hex(randomblob(16)))
+    hex(randomblob(16))
+
+    lower(hex(randomblob(16)))
 
 replace(X,Y,Z) The replace(X,Y,Z) function returns a string formed by
 substituting string Z for every occurrence of string Y in string X. The
@@ -362,15 +340,11 @@ sqlite3\_result\_zeroblob() routine from the C/C++ interface.
 
 SQLite supports five date and time functions as follows:
 
-> date(timestring, modifier, modifier, ...)
->
-> time(timestring, modifier, modifier, ...)
->
-> datetime(timestring, modifier, modifier, ...)
->
-> julianday(timestring, modifier, modifier, ...)
->
-> strftime(format, timestring, modifier, modifier, ...)
+    date(timestring, modifier, modifier, ...)
+    time(timestring, modifier, modifier, ...)
+    datetime(timestring, modifier, modifier, ...)
+    julianday(timestring, modifier, modifier, ...)
+    strftime(format, timestring, modifier, modifier, ...)
 
 All five date and time functions take a time string as an argument. The
 time string is followed by zero or more modifiers. The strftime()
@@ -388,31 +362,31 @@ most common substitutions found in the strftime() function from the
 standard C library plus two new substitutions, %f and %J. The following
 is a complete list of valid strftime() substitutions:
 
-  参数 说明   
-  ----------- --------------------------------
-  %d          day of month: 00
-  %f          fractional seconds: SS.SSS
-  %H          hour: 00-24
-  %j          day of year: 001-366
-  %J          Julian day number
-  %m          month: 01-12
-  %M          minute: 00-59
-  %s          seconds since 1970-01-01
-  %S          seconds: 00-59
-  %w          day of week 0-6 with Sunday==0
-  %W          week of year: 00-53
-  %Y          year: 0000-9999
-  %%          %
+  参数        |说明
+  ----------- |--------------------------------
+  %d          |day of month: 00
+  %f          |fractional seconds: SS.SSS
+  %H          |hour: 00-24
+  %j          |day of year: 001-366
+  %J          |Julian day number
+  %m          |month: 01-12
+  %M          |minute: 00-59
+  %s          |seconds since 1970-01-01
+  %S          |seconds: 00-59
+  %w          |day of week 0-6 with Sunday==0
+  %W          |week of year: 00-53
+  %Y          |year: 0000-9999
+  %%          |%
 
 Notice that all other date and time functions can be expressed in terms
 of strftime():
 
-  Function         Equivalent strftime()
-  ---------------- ------------------------------------
-  date(...)        strftime('%Y-%m-%d', ...)
-  time(...)        strftime('%H:%M:%S', ...)
-  datetime(...)    strftime('%Y-%m-%d %H:%M:%S', ...)
-  julianday(...)   strftime('%J', ...)
+  Function         |Equivalent strftime()
+  ---------------- |------------------------------------
+  date(...)        |strftime('%Y-%m-%d', ...)
+  time(...)        |strftime('%H:%M:%S', ...)
+  datetime(...)    |strftime('%Y-%m-%d %H:%M:%S', ...)
+  julianday(...)   |strftime('%J', ...)
 
 The only reasons for providing functions other than strftime() is for
 convenience and for efficiency.
@@ -421,29 +395,18 @@ Time Strings
 
 A time string can be in any of the following formats:
 
-> YYYY-MM-DD
->
-> YYYY-MM-DD HH:MM
->
-> YYYY-MM-DD HH:MM:SS
->
-> YYYY-MM-DD HH:MM:SS.SSS
->
-> YYYY-MM-DDTHH:MM
->
-> YYYY-MM-DDTHH:MM:SS
->
-> YYYY-MM-DDTHH:MM:SS.SSS
->
-> HH:MM
->
-> HH:MM:SS
->
-> HH:MM:SS.SSS
->
-> now
->
-> DDDDDDDDDD
+    YYYY-MM-DD
+    YYYY-MM-DD HH:MM
+    YYYY-MM-DD HH:MM:SS
+    YYYY-MM-DD HH:MM:SS.SSS
+    YYYY-MM-DDTHH:MM
+    YYYY-MM-DDTHH:MM:SS
+    YYYY-MM-DDTHH:MM:SS.SSS
+    HH:MM
+    HH:MM:SS
+    HH:MM:SS.SSS
+    now
+    DDDDDDDDDD
 
 In formats 5 through 7, the "T" is a literal character separating the
 date and the time, as required by ISO-8601. Formats 8 through 10 that
@@ -462,13 +425,10 @@ non-zero "HH:MM" suffix is subtracted from the indicated date and time
 in order to compute zulu time. For example, all of the following time
 strings are equivalent:
 
-> 2013-10-07 08:23:19.120
->
-> 2013-10-07T08:23:19.120Z
->
-> 2013-10-07 04:23:19.120-04:00
->
-> 2456572.84952685
+    2013-10-07 08:23:19.120
+    2013-10-07T08:23:19.120Z
+    2013-10-07 04:23:19.120-04:00
+    2456572.84952685
 
 In formats 4, 7, and 10, the fractional seconds value SS.SSS can have
 one or more digits following the decimal point. Exactly three digits are
@@ -486,31 +446,19 @@ date and/or time. Each modifier is a transformation that is applied to
 the time value to its left. Modifiers are applied from left to right;
 order is important. The available modifiers are as follows.
 
-> NNN days
->
-> NNN hours
->
-> NNN minutes
->
-> NNN.NNNN seconds
->
-> NNN months
->
-> NNN years
->
-> start of month
->
-> start of year
->
-> start of day
->
-> weekday N
->
-> unixepoch
->
-> localtime
->
-> utc
+    NNN days
+    NNN hours
+    NNN minutes
+    NNN.NNNN seconds
+    NNN months
+    NNN years
+    start of month
+    start of year
+    start of day
+    weekday N
+    unixepoch
+    localtime
+    utc
 
 The first six modifiers (1 through 6) simply add the specified amount of
 time to the date and time specified by the preceding timestring and
@@ -553,42 +501,42 @@ Examples
 
 Compute the current date.
 
-> SELECT date('now');
+SELECT date('now');
 
 Compute the last day of the current month.
 
-> SELECT date('now','start of month','+1 month','-1 day');
+SELECT date('now','start of month','+1 month','-1 day');
 
 Compute the date and time given a unix timestamp 1092941466.
 
-> SELECT datetime(1092941466, 'unixepoch');
+SELECT datetime(1092941466, 'unixepoch');
 
 Compute the date and time given a unix timestamp 1092941466, and
 compensate for your local timezone.
 
-> SELECT datetime(1092941466, 'unixepoch', 'localtime');
+SELECT datetime(1092941466, 'unixepoch', 'localtime');
 
 Compute the current unix timestamp.
 
-> SELECT strftime('%s','now');
+SELECT strftime('%s','now');
 
 Compute the number of days since the signing of the US Declaration of
 Independence.
 
-> SELECT julianday('now') - julianday('1776-07-04');
+SELECT julianday('now') - julianday('1776-07-04');
 
 Compute the number of seconds since a particular moment in 2004:
 
-> SELECT strftime('%s','now') - strftime('%s','2004-01-01 02:34:56');
+SELECT strftime('%s','now') - strftime('%s','2004-01-01 02:34:56');
 
 Compute the date of the first Tuesday in October for the current year.
 
-> SELECT date('now','start of year','+9 months','weekday 2');
+SELECT date('now','start of year','+9 months','weekday 2');
 
 Compute the time since the unix epoch in seconds (like
 strftime('%s','now') except includes fractional part):
 
-> SELECT (julianday('now') - 2440587.5)\*86400.0;
+SELECT (julianday('now') - 2440587.5)\*86400.0;
 
 Caveats And Bugs
 

@@ -36,12 +36,12 @@ General Usage
 
 ### Hotkey
 
-  Key           Description
-  ------------- -------------------------------------------------------
-  Ctrl i        Show window (set in `Basic Config` section above)
-  cmd w         close panel or tab or window
-  cmd d         split the current session into two panes horizontally
-  cmd shift d   split the current session into two panes Vertically
+  Key           | Description
+  ------------- | -------------------------------------------------------
+  Ctrl i        | Show window (set in `Basic Config` section above)
+  cmd w         | close panel or tab or window
+  cmd d         | split the current session into two panes horizontally
+  cmd shift d   | split the current session into two panes Vertically
 
 -   Cmd+left arrow, Cmd+right arrow navigates among tabs. So does Cmd-{
     and Cmd-}.

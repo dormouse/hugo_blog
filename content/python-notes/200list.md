@@ -1,33 +1,11 @@
-Python Note 200 - List
-======================
-
-date
-
-:   2017-02-13
-
-modified
-
-:   2017-02-13
-
-slug
-
-:   python-note-200-list
-
-tags
-
-:   python, note, list
-
-category
-
-:   Development
-
-author
-
-:   Dormouse Young
-
-summary
-
-:   Python note series 200 - list
+---
+title: "Python Note 200 - List"
+date: 2017-02-13
+lastmod: 2017-02-13
+tags: ["python","note","list"]
+categories: ["Development"]
+slug: "python-note-200-list"
+---
 
 列表推导（过滤）
 ----------------

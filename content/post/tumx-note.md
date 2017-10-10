@@ -19,105 +19,80 @@ tmux use prefix key (default: `C-b`)
 
 ### General
 
-  Key                            Description
-  ------------------------------ ----------------------------
-  :                              interactive dialog (promt)
-  d                              detach session
-  tmux restore                   restore session
-  : source -file \~/.tmux.conf   reload .tmux.conf
-  t                              big clock
-  ?                              list bindings
+  Key                            |Description
+  ------------------------------ |----------------------------
+  :                              |interactive dialog (promt)
+  d                              |detach session
+  tmux restore                   |restore session
+  : source -file \~/.tmux.conf   |reload .tmux.conf
+  t                              |big clock
+  ?                              |list bindings
 
 ### Pane Handling
 
-  Key             Description
-  --------------- -----------------------------------------
-  %               split vertically
-  "               split horizontally
-  o               go to next pane (down- pane)
-  q               show pane number, press number to go to
-  {               move current pane left
-  }               move current pane right
-  x               kill pane
-  &lt;space&gt;   toggle through layouts
-  ;               last pane
-  z               resize pane
-  M-Up            resize pane up 5 row
-  C-Up            resize pane up 1 row
+  Key             |Description
+  --------------- |-----------------------------------------
+  %               |split vertically
+  "               |split horizontally
+  o               |go to next pane (down- pane)
+  q               |show pane number, press number to go to
+  {               |move current pane left
+  }               |move current pane right
+  x               |kill pane
+  &lt;space&gt;   |toggle through layouts
+  ;               |last pane
+  z               |resize pane
+  M-Up            |resize pane up 5 row
+  C-Up            |resize pane up 1 row
 
 ### Window Handling
 
-  Key                 Description
-  ------------------- -------------------------------
-  c                   new window
-  ,                   rename window
-  n                   next window
-  p                   previous window
-  l                   previously selected window
-  w                   list all windows
-  \[0-9\]             move to window number \[0-9\]
-  f \[window name\]   find window
-  :                   list-windows list windows
-  &                   kill window
-  .                   move window
+  Key                 |Description
+  ------------------- |-------------------------------
+  c                   |new window
+  ,                   |rename window
+  n                   |next window
+  p                   |previous window
+  l                   |previously selected window
+  w                   |list all windows
+  \[0-9\]             |move to window number \[0-9\]
+  f \[window name\]   |find window
+  :                   |list-windows list windows
+  &                   |kill window
+  .                   |move window
 
 ### Session handling
 
-  Key                            Description
-  ------------------------------ -------------------------------------
-  tmux                           start new
-  tmux new -s myname             start new with name
-  tmux a -t                      reattach session (or at, or attach)
-  tmux a -t myname               reattach named session
-  tmux ls                        list sessions
-  tmux kill-s ession -t myname   kill named session
-  :new                           new session
-  s                              list sessions
-  \$                             name session
-  tmux kill-s erver              kill server and all sessions
+  Key                            |Description
+  ------------------------------ |-------------------------------------
+  tmux                           |start new
+  tmux new -s myname             |start new with name
+  tmux a -t                      |reattach session (or at, or attach)
+  tmux a -t myname               |reattach named session
+  tmux ls                        |list sessions
+  tmux kill-s ession -t myname   |kill named session
+  :new                           |new session
+  s                              |list sessions
+  \$                             |name session
+  tmux kill-s erver              |kill server and all sessions
 
 ### customizing tmux
 
-  ------------------------------------------------------------------
-  Key                       Description
-  ------------------------- ----------------------------------------
-  set-option -g prefix C-a  rebind the Ctrl-b prefix to Ctrl-a ; -g
-                            for global =&gt; every window
-
-  bind-key C-a last-window  switch to last active window; To use hit
-                            Ctrl-a twice
-
-  unbind %                  Remove default split binding
-
-  bind | split-window -h    bind vertical splitting to |
-
-  bind - split-window -v    bind vertical splitting to -
-
-  set -g status-bg black    set status bar bg color to black
-
-  set -g status-fg white    set status bar fg color to white
-
-  set -g status-left        beginning of statusbar hostname in green
-  '\#\[fg=green\]\#H'       
-
-  set -g status-right       number of users and load average for
-  '\#\[fg=yellow\]\#(       computer
-  uptime | cut -d "," -f    
-  2-)'                      
-
-  set-window-o ption -g     current window shown in red
-  window-status-current-bg  
-  red                       
-
-  setw -g monito r-a        highlight window with new activity
-  ctivity on                
-
-  set -g visual -ac tivity  show info on new activity
-  on                        
-
-  setw -g automatic -rename set window title to current command
-  on                        
-  ------------------------------------------------------------------
+  Key                       |Description
+  ------------------------- |----------------------------------------
+  set-option -g prefix C-a  |rebind the Ctrl-b prefix to Ctrl-a ; -g |for global =&gt; every window
+  bind-key C-a last-window  |switch to last active window; To use hit Ctrl-a twice
+  unbind %                  |Remove default split binding
+  bind | split-window -h    |bind vertical splitting to |
+  bind - split-window -v    |bind vertical splitting to -
+  set -g status-bg black    |set status bar bg color to black
+  set -g status-fg white    |set status bar fg color to white
+  set -g status-left '\#\[fg=green\]\#H'|beginning of statusbar hostname in green
+  set -g status-right '\#\[fg=yellow\]\#(uptime | cut -d "," -f 2-)'|number of users and load average for computer
+  set-window-o ption -g window-status-current-bg red|current window shown in red
+  setw -g monito r-a ctivity on |highlight window with new activity
+  set -g visual -ac tivity on   |show info on new activity
+  setw -g automatic -rename on  |set window title to current command
 
 Default key bindings
 --------------------

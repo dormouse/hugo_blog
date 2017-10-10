@@ -1,33 +1,11 @@
-Python Note 600 - Functional Programming
-========================================
-
-date
-
-:   2017-02-13
-
-modified
-
-:   2017-02-13
-
-slug
-
-:   python-note-600-functional-programming
-
-tags
-
-:   python, note, functional-programming
-
-category
-
-:   Development
-
-author
-
-:   Dormouse Young
-
-summary
-
-:   Python note series 600 - functional-programming
+---
+title: "Python Note 600 - Functional Programming"
+date: 2017-02-13
+lastmod: 2017-02-13
+tags: ["python","note"]
+categories: ["Development"]
+slug: "python-note-600-functional-programming"
+---
 
 lambda
 ------
@@ -103,4 +81,4 @@ when the sequence is empty:
     Out[9]: 139
 
 reduce 函数在 python3 中已经不属于 build-in 了，而是在 functools
-模块下， 如需使用，需要从functools模块中引入。
+模块下， 如需使用，需要从 functools 模块中引入。

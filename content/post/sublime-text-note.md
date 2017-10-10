@@ -5,12 +5,7 @@ lastmod: 2017-09-25
 tags: ["sublime","note"]
 categories: ["software"]
 slug: "sublime-text-note"
-description: "Note for sublime text. Sublime Text is a sophisticated text editor"
 ---
-
-
-    for code, markup and prose. You'll love the slick user interface,
-    extraordinary features and amazing performance.
 
 Install Sublime Text3
 ---------------------
