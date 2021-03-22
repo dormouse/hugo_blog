@@ -5,6 +5,7 @@ lastmod: 2017-02-13
 tags: ["python","note","file"]
 categories: ["Development"]
 slug: "python-note-100-file"
+type : "docs"
 ---
 
 打开文件
@@ -14,7 +15,7 @@ slug: "python-note-100-file"
 
     with open("/tmp/foo.txt") as file:
         data = file.read()
-
+    
     with open('examples/favorite-people.txt', encoding='utf-8') as a_file:
         for a_line in a_file:
             line_number += 1
@@ -145,10 +146,10 @@ os 和 os.path 模块
     >>>import os
     >>>oct(stat.S_IMODE(os.lstat("soft").st_mode))
     '0755'
-
+    
     >>>oct(os.stat("soft")[stat.ST_MODE])
     '040755'
-
+    
     >>>oct(os.stat("soft").st_mode & 0777)
     '0755'
 

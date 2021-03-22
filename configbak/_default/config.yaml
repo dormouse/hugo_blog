@@ -1,0 +1,43 @@
+baseURL: /
+title: Dormouse Hole
+
+# Comment when installing using Hugo Modules
+theme: eureka
+# Uncomment when installing using Hugo Modules
+# theme: github.com/wangchucheng/hugo-eureka
+
+paginate: 5
+copyright: >
+  &copy; 2012-2021 Dormouse Young
+enableEmoji: true
+enableGitInfo: true
+summaryLength: 75
+
+defaultContentLanguage: zh
+hasCJKLanguage: true # Set `true` for Chinese/Japanese/Korean.
+defaultContentLanguageInSubdir: true
+
+# Uncomment for google analytics
+# googleAnalytics: UA-123-45
+
+markup:
+  # Do not modify markup.highlight
+  highlight:
+    codeFences: false
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+  author: authors
+
+build:
+  useResourceCacheWhen: always

@@ -1,0 +1,65 @@
+baseurl = "https://dormouse.github.io/"
+title = "Dormouse Hole"
+theme = "ananke"
+# languageCode = "en-us"
+languageCode = "zh-cn"
+
+# googleAnalytics = "UA-XXXXXXXX-XX" # Optional
+# disqusShortname = "XYW"
+
+[params]
+  description = "You will forget it"
+  dateformat = "Jan 2, 2006" # Optional
+  # Fonts settings.
+  # googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.
+  # fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
+  # logofontfamily = "Lobster, cursive" # Optional, Override logo font.
+
+[params.author]
+  thumbnail = "images/author.jpg"
+  name = "Dormouse Young"
+  description = "<p>Pythoner, AFOL.<p>"
+  # facebook = "https://www.facebook.com/daisuke.tsuji.735"
+  # twitter = "https://twitter.com/dim0627"
+  github = "https://github.com/dormouse"
+
+# [outputs]
+# page = [ "HTML", "AMP" ] # if you want AMP enable.
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+[menu]
+
+  [[menu.main]]
+    identifier = "About"
+    name = "About"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/about/"
+    weight = -100
+
+  [[menu.main]]
+    identifier = "Post"
+    name = "Post"
+    post = "<span class='alert'>New!</span>"
+    pre = "<i class='fa fa-road'></i>"
+    url = "/post/"
+    weight = -110
+
+  [[menu.main]]
+    identifier = "Note"
+    name = "Note"
+    post = "<span class='alert'>New!</span>"
+    pre = "<i class='fa fa-road'></i>"
+    url = "/note/"
+    weight = -120

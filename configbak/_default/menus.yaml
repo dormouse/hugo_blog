@@ -1,0 +1,16 @@
+main:
+  - name: About
+    url: '#about'
+    weight: 1
+  - name: Posts
+    url: zh/posts/
+    weight: 2
+  - name: Docs
+    url: zh/docs/
+    weight: 3
+  - name: Personal
+    url: zh/personal/
+    weight: 4
+  - name: Lego
+    url: zh/lego/
+    weight: 5
